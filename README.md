@@ -2,7 +2,7 @@
 
 This simple tutorial has been inspired by [1], [2], [3]
 
-[![Build Status](https://travis-ci.com/frobino/blog.svg?branch=master)](https://travis-ci.org/frobino/blog)
+[![Build Status](https://travis-ci.com/frallannea/wedding.svg?branch=master)](https://travis-ci.org/frallannea/wedding)
 
 The commit history shows how to:
 - setup a 11ty project

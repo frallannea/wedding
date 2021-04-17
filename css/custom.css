@@ -113,3 +113,9 @@ a[href].tag:visited {
 .warning ol:only-child {
   margin: 0;
 }
+
+/* Images - picures */
+#weddingpic {
+  width: 100%;
+  min-width : 1000px;
+}

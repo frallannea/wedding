@@ -115,10 +115,33 @@ a[href].tag:visited {
 }
 
 /* Images - picures */
-#weddingpic {
+.weddingpic {
   width: 100%;
   min-width : 1000px;
 }
+
+.weddingpic-small {
+  width: 100%;
+  min-width : 1000px;
+  left: 50%;
+  margin-left: -800px;
+}
+
+/* TODO: remove if not used */
+@media screen and (max-width: 200px) { /* Specific to this particular image */
+  .weddingpic {
+    left: 50%;
+    margin-left: -800px;   /* 50% */
+  }
+}
+
+/* TODO: remove if not used */
+.bgimg {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("https://www.w3schools.com/w3images/wedding_couple.jpg")}
 
 /* Authentication */
 .auth-true .authenticated,

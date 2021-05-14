@@ -8,7 +8,8 @@ eleventyNavigation:
 <!-- Background photo -->
 <div class="w3-display-container">
 
-  <img id="weddingpic" src="https://www.w3schools.com/w3images/wedding_couple.jpg" class="w3-display-container w3-wide" alt="Lights">
+  <img src="https://www.w3schools.com/w3images/wedding_couple.jpg" class="w3-hide-small weddingpic w3-display-container w3-wide" alt="Lights">
+  <img src="https://www.w3schools.com/w3images/wedding_couple.jpg" class="w3-hide-large w3-hide-medium weddingpic-small w3-display-container w3-wide" alt="Lights">
 
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-jumbo">Meison & Jason</h1>
@@ -17,6 +18,7 @@ eleventyNavigation:
   </div>
 </div>
 
+<!--
 <h1>Latest 3 Posts</h1>
 
 {% set postslist = collections.posts | head(-3) %}
@@ -24,3 +26,4 @@ eleventyNavigation:
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+-->

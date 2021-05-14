@@ -1,12 +1,13 @@
 {
   "title": "Meison and Jason wedding page",
+  "titlesmall": "Meison and Jason",
   "url": "https://frallannea.github.io/blog",
   "description": "I am writing about my experiences as a developer.",
   "feed": {
     "subtitle": "I am writing about my experiences as a developer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://frallannea.github.io/blog"
+    "id": "https://frallannea.github.io/wedding"
   },
   "author": {
     "name": "frallannea",

@@ -40,3 +40,15 @@ function readFromFirebase(){
         });
       });
 }
+
+function readFromFirebaseParam(refToQuery, divToFill){
+    var db = database;
+    var reference = db.ref(refToQuery);
+    reference.once('value', function(retrievedText) {
+        console.log(retrievedText);
+        var realRetrievedText = retrievedText.val();
+        console.log(realRetrievedText);
+        var div = document.getElementById(divToFill);
+        div.innerHTML += realRetrievedText;
+      });
+}

@@ -4,7 +4,7 @@ title: About Us
 templateClass: tmpl-post
 eleventyNavigation:
   key: About Us
-  order: 3
+  order: 2
 ---
 
 In this section you can read a bit about us and about the location we have choosen.

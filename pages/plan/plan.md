@@ -4,7 +4,7 @@ title: Info
 templateClass: tmpl-post
 eleventyNavigation:
   key: Info
-  order: 4
+  order: 3
 ---
 
 In this section you can get an idea on how the day will look like,

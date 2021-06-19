@@ -14,6 +14,37 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
     <!-- css below is currently used only for hamburger button -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script>
+      // TODO: Replace with your project's config object.
+      // These are not sensitive info. Safety is implemented in
+      // Firebase project by using some form of authentication/protection.
+      var firebaseConfig = {
+        apiKey: "AIzaSyD5tM-2x3BSOLEJ2eeGlsRT6AKIX19L6Vk",
+        authDomain: "eleventy-blog-tutorial.firebaseapp.com",
+        databaseURL: "https://eleventy-blog-tutorial.firebaseio.com",
+        projectId: "eleventy-blog-tutorial",
+        storageBucket: "eleventy-blog-tutorial.appspot.com",
+        messagingSenderId: "1033941683486",
+        appId: "1:1033941683486:web:ae8fcb2a05be9e49194d0f",
+        measurementId: "G-4CFEYJ55RJ"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      // Global variable to access the database
+      var database = firebase.database();
+    </script>
+    <!-- Logic using the database -->
+    <script src="/wedding/scripts/saveToFirebase.js"></script>
+
   </head>
   <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif; font-size: 120%;}
@@ -31,7 +62,7 @@
         <div class="w3-right">
           <a href="/wedding/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Home</a>
           <a href="/wedding/posts/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Archive</a>
-          <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About Me</a>
+          <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About Us</a>
           <a href="/wedding/pages/search/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Search</a>
           <button type="button" class="w3-hide-small w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
         </div>
@@ -65,7 +96,7 @@
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
       <a href="/wedding/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
       <a href="/wedding/posts/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Archive</a>
-      <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Me</a>
+      <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
       <a href="/wedding/pages/search/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Search</a>
       <button type="button" class="w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
     </div>
@@ -122,38 +153,7 @@
       }
     </script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
-
-    <script>
-      // TODO: Replace with your project's config object.
-      // These are not sensitive info. Safety is implemented in
-      // Firebase project by using some form of authentication/protection.
-      var firebaseConfig = {
-        apiKey: "AIzaSyD5tM-2x3BSOLEJ2eeGlsRT6AKIX19L6Vk",
-        authDomain: "eleventy-blog-tutorial.firebaseapp.com",
-        databaseURL: "https://eleventy-blog-tutorial.firebaseio.com",
-        projectId: "eleventy-blog-tutorial",
-        storageBucket: "eleventy-blog-tutorial.appspot.com",
-        messagingSenderId: "1033941683486",
-        appId: "1:1033941683486:web:ae8fcb2a05be9e49194d0f",
-        measurementId: "G-4CFEYJ55RJ"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      // Global variable to access the database
-      var database = firebase.database();
-    </script>
-
-    <!-- Logic using the database -->
-    <script src="/wedding/scripts/saveToFirebase.js"></script>
+    <!-- This scripts needs to be here (not in header) because it requires loginBtn to exist -->
     <script src="/wedding/scripts/loginToFirebase.js"></script>
 
   </body>

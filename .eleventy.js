@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
   // JS dependencies and JS scripts for posts:
   eleventyConfig.addPassthroughCopy("scripts/*.js");
   eleventyConfig.addPassthroughCopy("posts/**/*.js");
+  eleventyConfig.addPassthroughCopy("pages/**/*.js");
   eleventyConfig.addPassthroughCopy({
     "node_modules/chart.js/dist/Chart.min.css" : "assets/Chart.min.css",
     "node_modules/chart.js/dist/Chart.min.js" : "assets/Chart.min.js"

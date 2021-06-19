@@ -9,6 +9,8 @@ eleventyNavigation:
 
 Please confirm your partecipation filling this form before Aug 1st.
 
+## Form
+
 <form class="form-signin">
     <p> Insert your email: </p>
     <label for="inputEmail" class="sr-only">Email Address</label>
@@ -28,3 +30,16 @@ Please confirm your partecipation filling this form before Aug 1st.
     <br></br>
     <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveToFirebase2()">Submit!</button>
 </form>
+
+## Stats
+
+The following chart is generated using the external (npm) package chartjs.
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<!-- Include "locally" chart js dependencies
+<link rel="stylesheet" href="/assets/Chart.min.css">
+<script src="/assets/Chart.min.js"></script> -->
+<!-- Include "remotely" chart js dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+<!-- Script creating chart using chart js library -->
+<script src="./scripts/charttest.js"></script>

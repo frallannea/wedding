@@ -4,7 +4,7 @@ title: RSPV
 templateClass: tmpl-post
 eleventyNavigation:
   key: RSPV
-  order: 5
+  order: 4
 ---
 
 Please confirm your partecipation filling this form before Aug 1st.

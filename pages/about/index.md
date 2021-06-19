@@ -1,32 +1,25 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: About Us
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: About Us
   order: 3
 ---
 
-I am a person that writes stuff.
+In this section you can read a bit about us and about the location we have choosen.
 
-<p id="pForPlace" onclick="readFromFirebaseParam('textPlace','pForPlace')">Click me to change my text color.</p>
+## Our history
 
-<div id="divForPlace">
-</div>
+<p id="pForUs"></p>
 
-<!--
-<script src='/scripts/saveToFirebase.js'>
-</script>
--->
+## Location history
+
+<p id="pForPlace"></p>
 
 <script>
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   alert("Ready!");
-  //   readFromFirebaseParam('textPlace','pForPlace');
-  //   }, 
-  // false);
-
-  // window.onload = readFromFirebaseParam('textPlace','pForPlace');
-  console.log(`hello`);
-  readFromFirebaseParam('textPlace','divForPlace');
+  // Query db for info on place and put info in right paragraph
+  readFromFirebaseParam('textUs','pForUs');
+  // Query db for info on place and put info in right paragraph
+  readFromFirebaseParam('textPlace','pForPlace');
 </script>

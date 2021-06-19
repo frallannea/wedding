@@ -29,6 +29,27 @@ function saveToFirebase() {
         });
 }
 
+function saveToFirebase2() {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        var userEmail = user.email;
+        var name = userEmail.substring(0, userEmail.lastIndexOf("@"));
+        var contactEmail = document.getElementById("inputEmail").value;
+        // create json object
+        var rspvObject = {
+            email: contactEmail,
+            origin: "italy",
+            answer: "yes"
+        };
+        var db = database;
+        var reference = db.ref('rspv/' + name);
+        reference.set(rspvObject)
+    } else {
+        console.log('error in retrieving user');
+    }
+}
+
 function readFromFirebase(){
     var db = database;
     var reference = db.ref('subscription-entries');

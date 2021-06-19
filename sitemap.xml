@@ -47,6 +47,11 @@
   </url>
   
   <url>
+    <loc>https://frallannea.github.io/blog/pages/rspv/</loc>
+    <lastmod>2021-06-19</lastmod>
+  </url>
+  
+  <url>
     <loc>https://frallannea.github.io/blog/tags/</loc>
     <lastmod>2021-06-19</lastmod>
   </url>
@@ -67,17 +72,17 @@
   </url>
   
   <url>
-    <loc>https://frallannea.github.io/blog/tags/GAME/</loc>
-    <lastmod>2021-06-19</lastmod>
-  </url>
-  
-  <url>
     <loc>https://frallannea.github.io/blog/tags/DYNAMIC CONTENT/</loc>
     <lastmod>2021-06-19</lastmod>
   </url>
   
   <url>
     <loc>https://frallannea.github.io/blog/tags/FIREBASE/</loc>
+    <lastmod>2021-06-19</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frallannea.github.io/blog/tags/GAME/</loc>
     <lastmod>2021-06-19</lastmod>
   </url>
 </urlset>

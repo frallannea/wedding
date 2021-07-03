@@ -124,7 +124,7 @@ a[href].tag:visited {
   width: 100%;
   min-width : 1000px;
   left: 50%;
-  margin-left: -800px;
+  margin-left: -820px;
 }
 
 /* TODO: remove if not used */
@@ -190,4 +190,8 @@ a[href].tag:visited {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.pixelText {
+  font-family: 'VT323', monospace;
 }

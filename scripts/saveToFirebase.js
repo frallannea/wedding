@@ -73,3 +73,14 @@ function readFromFirebaseParam(refToQuery, divToFill){
         div.innerHTML += realRetrievedText;
       });
 }
+
+function readFromFirebasePicParam(refToQuery, imgIdToFill){
+    var db = database;
+    var reference = db.ref(refToQuery);
+    reference.once('value', function(retrievedImgSrc) {
+        var realRetrievedImgSrc = retrievedImgSrc.val();
+        var img = document.getElementById(imgIdToFill);
+        img.src = realRetrievedImgSrc;
+      });
+}
+// document.getElementById("myImg").src = "hackanm.gif";

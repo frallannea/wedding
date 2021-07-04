@@ -29,18 +29,22 @@ function saveToFirebase() {
         });
 }
 
-function saveToFirebase2() {
+function saveFormToFirebase() {
     var user = firebase.auth().currentUser;
 
     if (user) {
         var userEmail = user.email;
         var name = userEmail.substring(0, userEmail.lastIndexOf("@"));
-        var contactEmail = document.getElementById("inputEmail").value;
+        
+        var userContact = document.getElementById("userContact").value;
+        var userOrigin = _getSelectedRadio("origin");
+        var userAnswer = _getSelectedRadio("answer");
+
         // create json object
         var rspvObject = {
-            email: contactEmail,
-            origin: "italy",
-            answer: "yes"
+            email: userContact,
+            origin: userOrigin,
+            answer: userAnswer
         };
         var db = database;
         var reference = db.ref('rspv/' + name);
@@ -48,6 +52,16 @@ function saveToFirebase2() {
     } else {
         console.log('error in retrieving user');
     }
+}
+
+function _getSelectedRadio(radioName){
+    radios = document.getElementsByName(radioName);
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+          return radios[i].value;
+        }
+    }
+    return null;
 }
 
 function readFromFirebase(){

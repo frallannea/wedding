@@ -8,7 +8,11 @@ reference.once('value', function(snapshot) {
         console.log(`User ${userName}: ${answer}`);
         if (answer === "yes") {
             answers[0]++;
-        } else {
+        }
+        else if (answer === "yesPlus") {
+            answers[0] = answers[0] + 2;
+        }
+        else {
             answers[1]++;
         }
     });

@@ -29,7 +29,7 @@ function saveToFirebase() {
         });
 }
 
-function saveFormToFirebase() {
+function saveRspvFormToFirebase() {
     var user = firebase.auth().currentUser;
 
     if (user) {
@@ -39,12 +39,14 @@ function saveFormToFirebase() {
         var userContact = document.getElementById("userContact").value;
         var userOrigin = _getSelectedRadio("origin");
         var userAnswer = _getSelectedRadio("answer");
+        var userComments = document.getElementById("rspvFormControlTextarea1").value;
 
         // create json object
         var rspvObject = {
             email: userContact,
             origin: userOrigin,
-            answer: userAnswer
+            answer: userAnswer,
+            comments: userComments
         };
         var db = database;
         var reference = db.ref('rspv/' + name);

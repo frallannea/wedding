@@ -4,7 +4,7 @@ title: Game
 templateClass: tmpl-post
 eleventyNavigation:
   key: Game
-  order: 6
+  order: 5
 ---
 
 # The wedding game

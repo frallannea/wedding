@@ -26,23 +26,11 @@ module.exports = function(eleventyConfig) {
 
   // JS dependencies and JS scripts for posts:
   eleventyConfig.addPassthroughCopy("scripts/*.js");
-  eleventyConfig.addPassthroughCopy("posts/**/*.js");
   eleventyConfig.addPassthroughCopy("pages/**/*.js");
   eleventyConfig.addPassthroughCopy({
     "node_modules/chart.js/dist/Chart.min.css" : "assets/Chart.min.css",
     "node_modules/chart.js/dist/Chart.min.js" : "assets/Chart.min.js"
   });
-
-  // Images for posts
-  eleventyConfig.addPassthroughCopy("posts/**/*.png");
-
-  // Special post
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.wav");
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.ogg");
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.mp3");
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.json");
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.map");
-  eleventyConfig.addPassthroughCopy("posts/5/**/*.html");
 
   // Special game page
   eleventyConfig.addPassthroughCopy("pages/game/**/*.png");
@@ -52,14 +40,5 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("pages/game/**/*.json");
   eleventyConfig.addPassthroughCopy("pages/game/**/*.map");
   eleventyConfig.addPassthroughCopy("pages/game/**/*.html");
-
-  // Get the first `n` elements of a collection. Used in index.njk
-  eleventyConfig.addFilter("head", (array, n) => {
-    if( n < 0 ) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
 
 };

@@ -44,6 +44,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("posts/5/**/*.map");
   eleventyConfig.addPassthroughCopy("posts/5/**/*.html");
 
+  // Special game page
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.png");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.wav");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.ogg");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.mp3");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.json");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.map");
+  eleventyConfig.addPassthroughCopy("pages/game/**/*.html");
+
   // Get the first `n` elements of a collection. Used in index.njk
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {

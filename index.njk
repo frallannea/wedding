@@ -12,13 +12,14 @@ eleventyNavigation:
   <img id="backgroundSmall" class="w3-hide-large w3-hide-medium weddingpic-small w3-display-container w3-wide" alt="Lights">
 
   <div class="w3-display-topmiddle w3-text-black w3-center">
-    <h1 class="w3-jumbo pixelText">FFFFFFFFF & LLLLLL</h1>
+    <h1 class="w3-jumbo pixelText">Linnea & Francesco</h1>
     <h2 class="w3-xlarge pixelText">ARE GETTING MARRIED</h2>
-    <h2 class="w3-xlarge pixelText"><b>17.07.2017</b></h2>
+    <h2 id="weddingDate" class="w3-xlarge pixelText"></h2>
   </div>
 </div>
 
 <script>
   readFromFirebasePicParam('backgroundImage', 'backgroundBig');
   readFromFirebasePicParam('backgroundImage', 'backgroundSmall');
+  readFromFirebaseParam('textDate', 'weddingDate');
 </script>

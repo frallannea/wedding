@@ -9,7 +9,7 @@ eleventyNavigation:
 
 In this section you can read a bit about us and about the location we have choosen.
 
-## Our history
+## It all started with a cupcake and a candle
 
 <p id="pForUs"></p>
 

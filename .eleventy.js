@@ -32,6 +32,9 @@ module.exports = function(eleventyConfig) {
     "node_modules/chart.js/dist/Chart.min.js" : "assets/Chart.min.js"
   });
 
+  // Images
+  eleventyConfig.addPassthroughCopy("images/*.png");
+
   // Special game page
   eleventyConfig.addPassthroughCopy("pages/game/**/*.png");
   eleventyConfig.addPassthroughCopy("pages/game/**/*.wav");

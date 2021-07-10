@@ -17,9 +17,15 @@ In this section you can read a bit about us and about the location we have choos
 
 <p id="pForPlace"></p>
 
+<p>
+  <img id=imgForPlace class=illustration>
+</p>
+
 <script>
   // Query db for info on place and put info in right paragraph
   readFromFirebaseParam('textUs','pForUs');
   // Query db for info on place and put info in right paragraph
   readFromFirebaseParam('textPlace','pForPlace');
+  // Query db for picture of place and put in right img.src
+  readFromFirebasePicParam('imagePlace', 'imgForPlace');
 </script>

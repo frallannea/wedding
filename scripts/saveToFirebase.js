@@ -37,14 +37,14 @@ function saveRsvpFormToFirebase() {
         var name = userEmail.substring(0, userEmail.lastIndexOf("@"));
         
         var userContact = document.getElementById("userContact").value;
-        var userOrigin = _getSelectedRadio("origin");
+        var userBusAnswer = _getSelectedRadio("busAnswer");
         var userAnswer = _getSelectedRadio("answer");
         var userComments = document.getElementById("rsvpFormControlTextarea1").value;
 
         // create json object
         var rsvpObject = {
             email: userContact,
-            origin: userOrigin,
+            busAnswer: userBusAnswer,
             answer: userAnswer,
             comments: userComments
         };

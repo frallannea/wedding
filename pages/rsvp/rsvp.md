@@ -19,16 +19,6 @@ been asked to do so**.
 ## Form
 
 <form class="form-signin">
-    <p> Insert your contacts (personal mail or phone) in case we need to contact you: </p>
-    <label for="userContact" class="sr-only">Email Address</label>
-    <input id="userContact" class="form-control" placeholder="Email address, phoneNr" required autofocus><br>
-    <p> Insert your country of origin: </p>
-    <input type="radio" id="sweden" name="origin" value="sweden">
-    <label for="sweden">sweden</label><br>
-    <input type="radio" id="italy" name="origin" value="italy">
-    <label for="italy">italy</label><br>
-    <input type="radio" id="other" name="origin" value="other" checked="checked">
-    <label for="other">other</label><br>
     <p> Are you joining? </p>
     <input type="radio" id="yes" name="answer" value="yes" checked="checked">
     <label for="yes">yes</label><br>
@@ -36,7 +26,15 @@ been asked to do so**.
     <label for="yesPlus">yes +1 (friend/partner)</label><br>
     <input type="radio" id="no" name="answer" value="no">
     <label for="no">no</label><br>
-    <p> Something we should know? </p>
+    <p> Insert your contacts (personal mail or phone) in case we need to contact you: </p>
+    <label for="userContact" class="sr-only">Email Address</label>
+    <input id="userContact" class="form-control" placeholder="Email address, phoneNr" required autofocus><br>
+    <p> Would you be interested in traveling to the wedding location with other guests in a small bus from the city center? </p>
+    <input type="radio" id="busYes" name="busAnswer" value="yes">
+    <label for="busYes">yes, I'd like to share transportation with other guests</label><br>
+    <input type="radio" id="busNo" name="busAnswer" value="no" checked="checked">
+    <label for="busNo">no, I prefer fixing an own transporation or to use public transport</label><br>
+    <p> Something else we should know (e.g. allergies)? </p>
     <textarea class="form-control" id="rsvpFormControlTextarea1" rows="3"></textarea>
     <br></br>
     <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRsvpFormToFirebase()">Submit!</button>

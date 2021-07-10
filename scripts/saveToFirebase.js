@@ -29,7 +29,7 @@ function saveToFirebase() {
         });
 }
 
-function saveRspvFormToFirebase() {
+function saveRsvpFormToFirebase() {
     var user = firebase.auth().currentUser;
 
     if (user) {
@@ -39,18 +39,18 @@ function saveRspvFormToFirebase() {
         var userContact = document.getElementById("userContact").value;
         var userOrigin = _getSelectedRadio("origin");
         var userAnswer = _getSelectedRadio("answer");
-        var userComments = document.getElementById("rspvFormControlTextarea1").value;
+        var userComments = document.getElementById("rsvpFormControlTextarea1").value;
 
         // create json object
-        var rspvObject = {
+        var rsvpObject = {
             email: userContact,
             origin: userOrigin,
             answer: userAnswer,
             comments: userComments
         };
         var db = database;
-        var reference = db.ref('rspv/' + name);
-        reference.set(rspvObject)
+        var reference = db.ref('rsvp/' + name);
+        reference.set(rsvpObject)
     } else {
         console.log('error in retrieving user');
     }

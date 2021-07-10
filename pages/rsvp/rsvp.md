@@ -1,9 +1,9 @@
 ---
 layout: layouts/post.njk
-title: RSPV
+title: RSVP
 templateClass: tmpl-post
 eleventyNavigation:
-  key: RSPV
+  key: RSVP
   order: 4
 ---
 
@@ -37,9 +37,9 @@ been asked to do so**.
     <input type="radio" id="no" name="answer" value="no">
     <label for="no">no</label><br>
     <p> Something we should know? </p>
-    <textarea class="form-control" id="rspvFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="rsvpFormControlTextarea1" rows="3"></textarea>
     <br></br>
-    <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRspvFormToFirebase()">Submit!</button>
+    <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRsvpFormToFirebase()">Submit!</button>
 </form>
 
 ## Stats

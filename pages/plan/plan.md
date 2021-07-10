@@ -31,7 +31,10 @@ The dress code is explained below.
 If you have questions you are welcome to contact Linnea or Francesco.
 The option to dress as a video game character is always accepted :D
 
-**Men:** should wear a jacket. The jacket can be in any color, but if it is black, you can wear a colored shirt. The trousers should preferably be the same color as the jacket, but this is not a must. A vest is not normally used with this dress code, it is considered a bit too festive. The man can wear a tie or a bow tie in any color and material to his suit, but Linnea and Francesco would prefer that you choose a darker color to the tie or bow tie. Both black and brown shoes are allowed. 
+**Men:** should wear a jacket.
+The jacket can be in any color, but if it is black, you can wear a colored shirt.
+The trousers should preferably be the same color as the jacket, but this is not a must.
+A vest is not required. The man can wear a tie or a bow tie in any color and material to his suit, but Linnea and Francesco would prefer that you choose a darker color to the tie or bow tie. Both black and brown shoes are allowed.
 
 **Women:** can wear different types of clothing such as a dress, a skirt, an elegant suit or a jumpsuit (byxdress). If the woman wears a dress it is usually knee length and it is appropriate with more colorful clothing. It is important that the clothes do not look everyday but express a more festive atmosphere. 
 

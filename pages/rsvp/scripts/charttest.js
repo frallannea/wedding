@@ -1,5 +1,5 @@
 var db = database;
-var reference = db.ref('rspv');
+var reference = db.ref('rsvp');
 reference.once('value', function(snapshot) {
     var answers = [0,0];
     snapshot.forEach(function(childSnapshot) {

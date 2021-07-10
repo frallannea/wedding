@@ -39,16 +39,3 @@ been asked to do so**.
     <br></br>
     <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRsvpFormToFirebase()">Submit!</button>
 </form>
-
-## Stats
-
-The following chart is generated using the external (npm) package chartjs.
-
-<canvas id="myChart" width="400" height="400"></canvas>
-<!-- Include "locally" chart js dependencies
-<link rel="stylesheet" href="/assets/Chart.min.css">
-<script src="/assets/Chart.min.js"></script> -->
-<!-- Include "remotely" chart js dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
-<!-- Script creating chart using chart js library -->
-<script src="./scripts/charttest.js"></script>

@@ -64,7 +64,7 @@
           <a href="/wedding/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Home</a>
           <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About Us</a>
           <a href="/wedding/pages/plan/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Info</a>
-          <a href="/wedding/pages/rspv/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">RSPV</a>
+          <a href="/wedding/pages/rsvp/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">RSVP</a>
           <a href="/wedding/pages/game/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Game</a>
           <button type="button" class="w3-hide-small w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
         </div>
@@ -99,7 +99,7 @@
       <a href="/wedding/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
       <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
       <a href="/wedding/pages/plan/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
-      <a href="/wedding/pages/rspv/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSPV</a>
+      <a href="/wedding/pages/rsvp/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSVP</a>
       <a href="/wedding/pages/game/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Game</a>
       <button type="button" class="w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
     </div>
@@ -124,11 +124,16 @@
 <p id="pForUs"></p>
 <h2>Location history</h2>
 <p id="pForPlace"></p>
+<p>
+  <img id=imgForPlace class=illustration>
+</p>
 <script>
   // Query db for info on place and put info in right paragraph
   readFromFirebaseParam('textUs','pForUs');
   // Query db for info on place and put info in right paragraph
   readFromFirebaseParam('textPlace','pForPlace');
+  // Query db for picture of place and put in right img.src
+  readFromFirebasePicParam('imagePlace', 'imgForPlace');
 </script>
 
 <p><a href="/wedding/">Home</a></p>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSPV</title>
+    <title>RSVP</title>
     <meta name="Description" content="L and F wedding page.">
     <!-- custom css, for style which is NOT present in the w3.css -->
     <link rel="stylesheet" href="/wedding/css/custom.css">
@@ -64,7 +64,7 @@
           <a href="/wedding/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Home</a>
           <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About Us</a>
           <a href="/wedding/pages/plan/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Info</a>
-          <a href="/wedding/pages/rspv/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">RSPV</a>
+          <a href="/wedding/pages/rsvp/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">RSVP</a>
           <a href="/wedding/pages/game/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Game</a>
           <button type="button" class="w3-hide-small w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
         </div>
@@ -99,7 +99,7 @@
       <a href="/wedding/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
       <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
       <a href="/wedding/pages/plan/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
-      <a href="/wedding/pages/rspv/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSPV</a>
+      <a href="/wedding/pages/rsvp/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSVP</a>
       <a href="/wedding/pages/game/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Game</a>
       <button type="button" class="w3-bar-item w3-button w3-padding-large" id="logoutBtn">Logout</button>
     </div>
@@ -117,7 +117,7 @@
       </div>
       -->
 
-      <h1>RSPV</h1>
+      <h1>RSVP</h1>
 
 <p>Please confirm your partecipation filling this form before Aug 1st.</p>
 <p>Note that:</p>
@@ -130,16 +130,6 @@ been asked to do so</strong>.</li>
 </ul>
 <h2>Form</h2>
 <form class="form-signin">
-    <p> Insert your contacts (personal mail or phone) in case we need to contact you: </p>
-    <label for="userContact" class="sr-only">Email Address</label>
-    <input id="userContact" class="form-control" placeholder="Email address, phoneNr" required autofocus><br>
-    <p> Insert your country of origin: </p>
-    <input type="radio" id="sweden" name="origin" value="sweden">
-    <label for="sweden">sweden</label><br>
-    <input type="radio" id="italy" name="origin" value="italy">
-    <label for="italy">italy</label><br>
-    <input type="radio" id="other" name="origin" value="other" checked="checked">
-    <label for="other">other</label><br>
     <p> Are you joining? </p>
     <input type="radio" id="yes" name="answer" value="yes" checked="checked">
     <label for="yes">yes</label><br>
@@ -147,10 +137,18 @@ been asked to do so</strong>.</li>
     <label for="yesPlus">yes +1 (friend/partner)</label><br>
     <input type="radio" id="no" name="answer" value="no">
     <label for="no">no</label><br>
-    <p> Something we should know? </p>
-    <textarea class="form-control" id="rspvFormControlTextarea1" rows="3"></textarea>
+    <p> Insert your contacts (personal mail or phone) in case we need to contact you: </p>
+    <label for="userContact" class="sr-only">Email Address</label>
+    <input id="userContact" class="form-control" placeholder="Email address, phoneNr" required autofocus><br>
+    <p> Would you be interested in traveling to the wedding location with other guests in a small bus from the city center? </p>
+    <input type="radio" id="busYes" name="busAnswer" value="yes">
+    <label for="busYes">yes, I'd like to share transportation with other guests</label><br>
+    <input type="radio" id="busNo" name="busAnswer" value="no" checked="checked">
+    <label for="busNo">no, I prefer fixing an own transporation or to use public transport</label><br>
+    <p> Something else we should know (e.g. allergies)? </p>
+    <textarea class="form-control" id="rsvpFormControlTextarea1" rows="3"></textarea>
     <br></br>
-    <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRspvFormToFirebase()">Submit!</button>
+    <button class="btn btn-lg btn-primary btn-lock" type="submit" onclick="saveRsvpFormToFirebase()">Submit!</button>
 </form>
 <h2>Stats</h2>
 <p>The following chart is generated using the external (npm) package chartjs.</p>
@@ -170,7 +168,7 @@ been asked to do so</strong>.</li>
 
     <footer></footer>
 
-    <!-- Current page: /wedding/pages/rspv/ -->
+    <!-- Current page: /wedding/pages/rsvp/ -->
 
     <script>
       // Used to toggle the menu on small screens when clicking on the menu button

@@ -11,15 +11,19 @@ In this section you can read a bit about us and about the location we have choos
 
 ## It all started with a cupcake and a candle
 
+<p>
+  <img id=imgForUs class=illustration>
+</p>
+
 <p id="pForUs"></p>
 
 ## Location history
 
-<p id="pForPlace"></p>
-
 <p>
   <img id=imgForPlace class=illustration>
 </p>
+
+<p id="pForPlace"></p>
 
 <script>
   // Query db for info on place and put info in right paragraph
@@ -28,4 +32,6 @@ In this section you can read a bit about us and about the location we have choos
   readFromFirebaseParam('textPlace','pForPlace');
   // Query db for picture of place and put in right img.src
   readFromFirebasePicParam('imagePlace', 'imgForPlace');
+  // Query db for picture of place and put in right img.src
+  readFromFirebasePicParam('imageUs10', 'imgForUs');
 </script>

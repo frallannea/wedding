@@ -13,7 +13,7 @@ and what you can do to make our day special.
 # Preliminary plan
 
 The whole wedding celebration will take place at the same location.
-Please note that the time may be updated closer to the wedding date depending on the restrictions.
+Please note that the plan may be updated closer to the wedding date depending on the restrictions.
 
 <p id="pForSchedule"></p>
 
@@ -29,7 +29,7 @@ Contact our three amazing toastmasters Caroline (Carro), Linnea (Linn) and Anna:
 
 The dress code is explained below.
 If you have questions you are welcome to contact Linnea or Francesco.
-The option to dress as a video game character is always accepted :D
+The option to dress as a video game character is always accepted - just kidding :)
 
 **Men:** should wear a jacket.
 The jacket can be in any color, but if it is black, you can wear a colored shirt.

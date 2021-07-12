@@ -10,6 +10,8 @@ eleventyNavigation:
 In this section you can get an idea on how the day will look like,
 and what you can do to make our day special.
 
+<img id="glassesPic" class="illustration" src="../../images/glasses.png" alt="Refresh the page!">
+
 # Preliminary plan
 
 The whole wedding celebration will take place at the same location.

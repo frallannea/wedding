@@ -9,6 +9,8 @@ eleventyNavigation:
 
 Please confirm your partecipation filling this form before Aug 1st.
 
+<img id="gamePic" class="illustration" src="../../images/letter.png" alt="Refresh the page!">
+
 Note that:
 - by saying "yes", only the owner of the account you used
 to access the site will be registered;

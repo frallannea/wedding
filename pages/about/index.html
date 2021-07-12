@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About</title>
     <meta name="Description" content="L and F wedding page.">
     <!-- custom css, for style which is NOT present in the w3.css -->
     <link rel="stylesheet" href="/wedding/css/custom.css">
@@ -62,7 +62,7 @@
         <a href="/wedding/" class="w3-hide-small w3-bar-item w3-button w3-padding-large">L and F wedding page</a>
         <div class="w3-right">
           <a href="/wedding/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Home</a>
-          <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About Us</a>
+          <a href="/wedding/pages/about/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">About</a>
           <a href="/wedding/pages/plan/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Info</a>
           <a href="/wedding/pages/rsvp/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">RSVP</a>
           <a href="/wedding/pages/game/" class=" w3-hide-small w3-bar-item w3-button w3-padding-large">Game</a>
@@ -97,7 +97,7 @@
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
       <a href="/wedding/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
-      <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+      <a href="/wedding/pages/about/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
       <a href="/wedding/pages/plan/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
       <a href="/wedding/pages/rsvp/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSVP</a>
       <a href="/wedding/pages/game/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Game</a>
@@ -117,16 +117,19 @@
       </div>
       -->
 
-      <h1>About Us</h1>
+      <h1>About</h1>
 
 <p>In this section you can read a bit about us and about the location we have choosen.</p>
 <h2>It all started with a cupcake and a candle</h2>
+<p>
+  <img id=imgForUs class=illustration>
+</p>
 <p id="pForUs"></p>
 <h2>Location history</h2>
-<p id="pForPlace"></p>
 <p>
   <img id=imgForPlace class=illustration>
 </p>
+<p id="pForPlace"></p>
 <script>
   // Query db for info on place and put info in right paragraph
   readFromFirebaseParam('textUs','pForUs');
@@ -134,6 +137,8 @@
   readFromFirebaseParam('textPlace','pForPlace');
   // Query db for picture of place and put in right img.src
   readFromFirebasePicParam('imagePlace', 'imgForPlace');
+  // Query db for picture of place and put in right img.src
+  readFromFirebasePicParam('imageUs10', 'imgForUs');
 </script>
 
 <p><a href="/wedding/">Home</a></p>

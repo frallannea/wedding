@@ -14,9 +14,10 @@ Please confirm your partecipation filling this form before Aug 1st.
 Note that:
 - by saying "yes", only the owner of the account you used
 to access the site will be registered;
-- you can always get back to this page and update your answer, however once you update your previous answers will be deleted;
 - unfortunately, due to the current COVID related restrictions, we cannot invite more than a restricted number of persons. Hence, **the +1 option should be used only by those who have
-been asked to do so**.
+been asked to do so**;
+- you can always get back to this page and update your answer, however once you update your previous answers will be deleted;
+- you will NOT get a mail/screen of confirmation after you press "Submit!". We will contact you in case we do not receive your answer;
 
 ## Form
 

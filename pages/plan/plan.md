@@ -41,9 +41,18 @@ A vest is not required. The man can wear a tie or a bow tie in any color and mat
 **Women:** can wear different types of clothing such as a dress, a skirt, an elegant suit or a jumpsuit (byxdress). If the woman wears a dress it is usually knee length and it is appropriate with more colorful clothing. It is important that the clothes do not look everyday but express a more festive atmosphere. 
 
 # Gifts
-The greatest gift we can receive is that you share this day with us. If you still feel that you would like to give us a gift, we would like a contribution to our honeymoon. More information about how you contribute will be given shortly on this webpage.
+The greatest gift we can receive is that you share this day with us.
+If you still feel that you would like to give us a gift,
+we would like a contribution to our honeymoon.
+You can send your contribution to the account number below:
+
+<p id="pForKonto"></p>
+
+In case you want to send a contribution from a non-Swedish account,
+please contact us for more information.
 
 <script>
   readFromFirebaseParam('textSchedule','pForSchedule');
   readFromFirebaseParam('textToast','pForToast');
+  readFromFirebaseParam('textKonto','pForKonto');
 </script>

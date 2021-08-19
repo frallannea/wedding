@@ -1,11 +1,3 @@
----
-layout: layouts/post.njk
-title: RSVP
-templateClass: tmpl-post
-eleventyNavigation:
-  key: RSVP
-  order: 4
----
 
 Please confirm your partecipation filling this form before Aug 1st.
 

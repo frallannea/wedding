@@ -7,9 +7,6 @@ eleventyNavigation:
   order: 5
 ---
 
-Considering that the "save-the-date" card had a great success,
-we tought to make it alive in this webpage!
-
 <img id="gamePic" class="illustration" src="../../images/wedding-8bit.png" alt="Refresh the page!">
 
 Click the link below to play a day in our life!

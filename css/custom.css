@@ -107,6 +107,8 @@ a[href].tag:visited {
 
 /* Warning */
 .warning {
+  max-width: 37.5em;
+  line-height: 1.45;
   background-color: #ffc;
   padding: 1em 0.625em; /* 16px 10px /16 */
 }

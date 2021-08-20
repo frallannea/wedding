@@ -56,6 +56,29 @@ function saveRsvpFormToFirebase() {
     }
 }
 
+function saveTranspFormToFirebase() {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        var userEmail = user.email;
+        var name = userEmail.substring(0, userEmail.lastIndexOf("@"));
+        
+        var userBusToAnswer = _getSelectedRadio("ToAnswer");
+        var userBusBackAnswer = _getSelectedRadio("BackAnswer");
+
+        // create json object
+        var trasportObject = {
+            busToAnswer: userBusToAnswer,
+            busBackAnswer: userBusBackAnswer
+        };
+        var db = database;
+        var reference = db.ref('transport/' + name);
+        reference.set(trasportObject)
+    } else {
+        console.log('error in retrieving user');
+    }
+}
+
 function _getSelectedRadio(radioName){
     radios = document.getElementsByName(radioName);
     for (var i = 0, length = radios.length; i < length; i++) {
